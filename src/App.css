@@ -1,0 +1,230 @@
+
+body {
+ background: black;
+ color: white;
+}
+.Header {
+  background:rgb(10, 15, 15);
+}
+.Header img {
+  height: 30px;
+  width: 20%;
+  margin:10px;
+  padding-top: 10px;
+  
+}
+.Header a {
+ background: red;
+ color: rgb(245, 242, 242);
+ top:0;
+ right:0;
+ padding: 10px;
+ text-align: center;
+ text-decoration: none;
+ position: absolute;
+ margin:10px;
+ 
+}
+
+.Main {
+ height:100vh; 
+ width:100vw;
+ background: url(./assets/bk.jpg) center/cover;
+ padding-top:90px;
+
+
+}
+
+.Main h2 {
+text-align:center;
+color:white;
+font-size: 2.5rem;
+font-family: cursive;
+text-shadow: 13px 15px 4px #9d98bb;
+}
+
+#titre2 {
+  text-align: center;
+  color:white;
+  font-size: 1.5rem;
+  font-family: cursive;
+  display: block;
+  justify-content: center;
+}
+.Main p{
+text-align: center;
+color: white;
+
+}
+
+.Main-form {
+  display: flex;
+  justify-content: center;
+}
+  
+
+.Main-form button {
+height: 60px;
+width: 15%;
+cursor:pointer;
+text-transform: uppercase;
+background: red;
+color:white;
+
+}
+
+button:hover  {
+ background: darkslateblue;
+ color:rgb(65, 106, 136)
+
+}
+
+.Container {
+   display: grid;
+  grid-template-columns: 50% 50%;
+  background: black;
+  margin: 0 auto;
+
+
+}
+
+.Text {
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 1.2rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Grid {
+  display:grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr;
+  margin:10px;
+  position: relative;
+  
+}
+
+.Grid img,video {
+  height:40vh;
+  width:35vw;
+  padding-top: 20px;
+  margin:0 auto;
+}
+
+.more-text {
+  position:absolute;
+  left:0;
+  text-align:left;
+  color: white;
+  
+}
+
+.Container-down {
+  display: grid;
+  grid-template-columns:70% 30%;
+  margin:0 auto;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-areas: 
+  "im T1"
+  "pa vi";
+}
+
+.Image-down  {
+  grid-area:im;
+}
+
+.text-down{
+  grid-area: T1;
+}
+
+
+.parag {
+  grid-area:pa ;
+}
+
+
+.grid-down {
+  display: grid;
+  margin: 0 auto;
+
+}
+.text-down {
+  text-align:left;
+  padding:20px;
+  margin:0 auto;
+  position: relative;
+  font-size: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing:0.2em;
+
+}
+
+.Image-down img {
+  height:350px;
+  width: 25%;
+  margin:0;
+  padding: 20px;
+  left: 300px;
+  position: relative;
+ 
+}
+
+.parag-down .parag {
+  text-align :justify;
+  margin:40px;
+  padding:40px;
+  font-size: 1.3rem;
+
+}
+
+#Download img {
+  height:70px;
+  width:20%;
+  top:0;
+  left:180px;
+  padding:90px;
+  margin:10px;
+  position: absolute;
+  
+}
+
+#Download p {
+  color: rgb(48, 8, 66);
+  text-align: center;
+  padding: 110px;
+  position: absolute;
+  top:0;
+  left:220px;
+  font-size: 1.1em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+.Container {
+  display:grid;
+  margin:0 auto;
+  grid-template-columns: 55% 45%;
+}
+
+.Grid {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.Footer {
+  height:90vh;
+  width:60%;
+  margin:0 auto;
+}
+
+.Form {
+  display:flex;
+  justify-content: space-around;
+  height:50vh;
+  width:50vw;
+  
+
+}
