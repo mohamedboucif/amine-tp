@@ -1,29 +1,41 @@
 
 body {
- background: black;
- color: white;
+  margin :0 auto;
 }
+ 
+ 
+
 .Header {
-  background:rgb(10, 15, 15);
-}
-.Header img {
-  height: 30px;
-  width: 20%;
-  margin:10px;
-  padding-top: 10px;
+  width:90%;
+  position: relative;
+  z-index:1000;
+  margin: 0 auto;
+  top:10px;
+  left:25px;
   
 }
-.Header a {
- background: red;
- color: rgb(245, 242, 242);
- top:0;
- right:0;
- padding: 10px;
- text-align: center;
- text-decoration: none;
- position: absolute;
- margin:10px;
- 
+.Header img {
+  height:25px;
+  width: 20%;
+  margin:10px;
+  padding: 10px;
+  right:100px;
+}
+  
+  
+
+.Header ul {
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+   font-size: 1.2em;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+   cursor: pointer;
+   padding:0;
+   margin:0 auto;
+   color:red;
+   
 }
 
 .Main {
@@ -215,11 +227,9 @@ button:hover  {
 }
 
 .Footer {
-  height:90vh;
-  width:60%;
-  margin:0 auto;
+  height:10vh;
+  width:20%;
 }
-
 .Form {
   display:flex;
   justify-content: space-around;

@@ -8,17 +8,26 @@ import Everywhere from './components/Everywhere';
 import VideoPlayer from './components/VideoPlayer';
 import Footer from './components/Footer';
 
+import {Routes,Route} from "react-router-dom";
+
 
 
 function App() {
   return (
     <>
     <Header/>
-    <Main />
-    <Devices_Sections />
-    <Download_Section />
-    <Everywhere />
-    <VideoPlayer />
+
+    <Routes>
+         <Route path="/" element ={<Main />}/>
+         <Route path ="/Devices" element = {<Devices_Sections />} />
+         <Route path ="/Download" element ={<Download_Section />} /> 
+         <Route path ="/Everywhere" element ={<Everywhere />} />
+        
+
+    </Routes>
+    
+    
+
     <Footer />
 
     </>
