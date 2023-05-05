@@ -7,8 +7,10 @@ import Download_Section from './components/Download_Section';
 import Everywhere from './components/Everywhere';
 import VideoPlayer from './components/VideoPlayer';
 import Footer from './components/Footer';
+import Movies from './components/Movies';
 
 import {Routes,Route} from "react-router-dom";
+
 
 
 
@@ -22,6 +24,7 @@ function App() {
          <Route path ="/Devices" element = {<Devices_Sections />} />
          <Route path ="/Download" element ={<Download_Section />} /> 
          <Route path ="/Everywhere" element ={<Everywhere />} />
+         <Route path ="/Movies" element ={<Movies />} />
         
 
     </Routes>

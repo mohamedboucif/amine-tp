@@ -238,3 +238,28 @@ button:hover  {
   
 
 }
+
+.Form {
+  display: flex;
+  justify-content:space-around;
+  height:50px;
+  width: 250px;
+  flex-direction:row;
+}
+
+.MainMovies{
+  height:100vh; 
+  width:100vw;
+  background:white;
+  padding-top:90px;
+ 
+ 
+ }
+
+ .Movieslist {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+ }

@@ -8,14 +8,28 @@ export default function Header() {
     <header className ="Header">
         <img src ={image} alt ="logo netflix" />
 
-       <ul>
-        <Link to ="/">HOME</Link>
-        <Link to ="/devices"> DEVICES </Link>
-        <Link to ="/download"> DOWNLOAD </Link>
-        <Link to ="/everywhere"> EVERYWHERE </Link>
-
+        <ul>
+        <li>
+          {" "} 
+          <Link to ="/">HOME</Link>
+       </li>
+       <li>{ " "} 
+       <Link to ="/devices"> DEVICES </Link> 
+       </li>
+       <li>
+        {" "}
+        <Link to ="/download"> DOWNLOAD </Link> 
+        </li> 
+        <li>
+          {" "}
+          <Link to ="/everywhere"> EVERYWHERE </Link>
+        </li>
+        <li>
+          {" "}
+          <Link to ="/Movies"> Movies </Link>
+        </li>
+      
        </ul>
-       
 
     </header>
     
