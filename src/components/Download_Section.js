@@ -34,9 +34,6 @@ export default function Download_Section() {
 
             </div>
             
-            
-        
-
         </div>
     </section>
   )

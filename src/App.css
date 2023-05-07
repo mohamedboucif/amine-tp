@@ -1,10 +1,7 @@
-
 body {
-  margin :0 auto;
+  background: url("./assets/bk8.jpg") center/cover;
+  
 }
- 
- 
-
 .Header {
   width:90%;
   position: relative;
@@ -30,21 +27,17 @@ body {
    list-style: none;
    font-size: 1.2em;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
-   
    cursor: pointer;
    padding:0;
    margin:0 auto;
-   color:red;
+   color:white;
    
 }
 
 .Main {
  height:100vh; 
  width:100vw;
- background: url(./assets/bk.jpg) center/cover;
  padding-top:90px;
-
-
 }
 
 .Main h2 {
@@ -91,46 +84,65 @@ button:hover  {
 
 }
 
-.Container {
-   display: grid;
-  grid-template-columns: 50% 50%;
-  background: black;
-  margin: 0 auto;
-
-
-}
-
-.Text {
-  text-align: center;
-  letter-spacing: 0.1em;
-  font-size: 1.2rem;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.Container-Section{
+  display:grid;
+  grid-template-columns:55% 45%;
+  
 }
 
 .Grid {
-  display:grid;
-  grid-template-columns: 1fr ;
+  display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  margin:10px;
-  position: relative;
+  grid-template-areas: 
+  "video"
+  "img";
+}
+
+.image-devices  {
+  grid-area: img;
+}
+
+.video {
+  grid-area: video;
+}
+ 
+.image-devices img {
+  height: 350px;
+  width: 260px;
+  
+}
+.Grid video {
+  height: 320px;
+  width: 470px;
+  
+}
+.Text {
+  text-align:center;
+  letter-spacing: 0.1em;
+  font-size: 1.7rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
   
 }
 
-.Grid img,video {
-  height:40vh;
-  width:35vw;
-  padding-top: 20px;
-  margin:0 auto;
+.para-devices {
+  text-align: center;
+  font-size: 1.1em;
+  padding-top: 40px;
 }
 
 .more-text {
-  position:absolute;
-  left:0;
-  text-align:left;
-  color: white;
   
+  text-align:center;
+  letter-spacing:0.1em;
+  font-size: 1.7rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
 }
+
+
+
 
 .Container-down {
   display: grid;
@@ -218,7 +230,7 @@ button:hover  {
 .Container {
   display:grid;
   margin:0 auto;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 35% 65%;
 }
 
 .Grid {
@@ -256,10 +268,109 @@ button:hover  {
  
  }
 
- .Movieslist {
+.Movieslist {
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+}
 
 
+.everywhere-section {
+  display:grid;
+  grid-template-columns: 80% 20%;
+  
+}
+.Grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:  
+  "tt vid"
+  "im1 im2"
+  "txt vi";
+ 
+}
+
+
+.parag-every{
+  grid-area: tt;
+}
+ .video{
+   grid-area:vid;
+ }
+ 
+ .image-every {
+  grid-area: im1;
+ }
+ .image-deux {
+  grid-area: im2;
+ }
+
+ .pa-every {
+  grid-area: txt;
+ }
+
+.text-every  {
+  text-align:center;
+  color: white;
+  font-size:3rem;
+  padding-top: 30px;
+  margin: 0 auto;
+  padding:30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.text-every p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 15px;
+  
+
+}
+
+
+.Grid video {
+  height:320px;
+  width:500px;
+  position: absolute;
+  margin: 10px;
+  right:190px;
+  padding: 10px;
+
+}
+
+.image-every{
+  height: 200px;
+  width: 100px;
+  left:950px;
+  position: relative;
+  margin:10px;
+  z-index:-100;
+  padding: 0;
+
+  
+}
+.image-deux {
+  height: 230px;
+  width: 230px;
+  margin:30px;
+}
+
+ p {
+  color: white;
+  text-align: left;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+ }
+
+ .pa-every {
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  padding-top: 10px;
+  position: relative;
+  top:0;
+  left:0;
  }
