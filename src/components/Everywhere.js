@@ -17,7 +17,7 @@ const Everywhere =()=> {
                     <div className="text-every">
 
                         <h1> Regardez partout. </h1>
-                      <p> 
+                        <p> 
                         Diffusez des films et des émissions de télévision en illimité
                         sur votre téléphone,tablette,ordinateur portable et téléviseur
                         sana payer plus.
@@ -39,15 +39,17 @@ const Everywhere =()=> {
                  <img src={evw} alt="image3" />
                  </div>
                 <div>
-                 
-                </div>
                 
+                </div>
                 <p className="pa-every">
                 Pour utiliser Netflix sur votre téléphone, 
                 vous devez d'abord télécharger l'application Netflix depuis le Google Play Store 
                 (pour les appareils Android) ou l'App Store (pour les appareils iOS/Apple). 
                 Une fois que vous avez installé l'application.
-                </p> 
+                </p>    
+                 
+                
+                
 
                
             </div>

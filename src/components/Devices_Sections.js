@@ -25,7 +25,7 @@ export default function Devices_Sections() {
            
            </div>
       
-       <div className="Grid">
+       <div className="Grid-devices">
               <div className="image-devices">
                 <img src ={tv} type="image-tv" />
               </div>
@@ -34,8 +34,6 @@ export default function Devices_Sections() {
              <source src= {video2} type="video/mp4" />
           
                </video>     
-          
-
 
        </div>
      

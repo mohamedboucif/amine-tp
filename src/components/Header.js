@@ -10,23 +10,23 @@ export default function Header() {
 
         <ul>
         <li>
-          {" "} 
+          
           <Link to ="/">HOME</Link>
        </li>
-       <li>{ " "} 
+       <li>
        <Link to ="/devices"> DEVICES </Link> 
        </li>
        <li>
-        {" "}
+       
         <Link to ="/download"> DOWNLOAD </Link> 
         </li> 
         <li>
-          {" "}
+        
           <Link to ="/everywhere"> EVERYWHERE </Link>
         </li>
         <li>
-          {" "}
-          <Link to ="/Movies"> Movies </Link>
+      
+          <Link to ="/Movies"> MOVIES </Link>
         </li>
       
        </ul>

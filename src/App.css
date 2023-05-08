@@ -1,6 +1,6 @@
 body {
   background: url("./assets/bk8.jpg") center/cover;
-  
+ 
 }
 .Header {
   width:90%;
@@ -9,14 +9,15 @@ body {
   margin: 0 auto;
   top:10px;
   left:25px;
-  
+
 }
 .Header img {
-  height:25px;
-  width: 20%;
-  margin:10px;
-  padding: 10px;
-  right:100px;
+  height:41px;
+  width: 15%;
+  padding:0px;
+  right:60px;
+  margin:0px;
+  position: relative;
 }
   
   
@@ -25,14 +26,23 @@ body {
    display: flex;
    justify-content: space-around;
    list-style: none;
-   font-size: 1.2em;
+   font-size: 1.3em;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    cursor: pointer;
    padding:0;
    margin:0 auto;
-   color:white;
+   padding-top: 10px;
+   
+   
    
 }
+.Header li {
+  background-color: red;
+  color:chartreuse;
+  align-items: center;
+ 
+}
+
 
 .Main {
  height:100vh; 
@@ -43,7 +53,7 @@ body {
 .Main h2 {
 text-align:center;
 color:white;
-font-size: 2.5rem;
+font-size: 2.8rem;
 font-family: cursive;
 text-shadow: 13px 15px 4px #9d98bb;
 }
@@ -51,7 +61,7 @@ text-shadow: 13px 15px 4px #9d98bb;
 #titre2 {
   text-align: center;
   color:white;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: cursive;
   display: block;
   justify-content: center;
@@ -65,6 +75,7 @@ color: white;
 .Main-form {
   display: flex;
   justify-content: center;
+  padding-top: 50px;
 }
   
 
@@ -79,49 +90,64 @@ color:white;
 }
 
 button:hover  {
- background: darkslateblue;
- color:rgb(65, 106, 136)
+ background:blue;
+ color:black;
 
 }
 
+.Section {
+  height: 90vh;
+}
 .Container-Section{
   display:grid;
-  grid-template-columns:55% 45%;
+  grid-template-columns:60% 40%;
+  position: relative;
   
 }
 
-.Grid {
+.Grid-devices {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: 
   "video"
   "img";
 }
 
-.image-devices  {
-  grid-area: img;
-}
-
 .video {
   grid-area: video;
 }
+
+.image-devices  {
+  grid-area: img;
+}
  
+
 .image-devices img {
-  height: 350px;
-  width: 260px;
+  height: 300px;
+  width: 230px;
+  right:-90px;
+  position: relative;
+  margin:0 auto;
   
 }
-.Grid video {
-  height: 320px;
-  width: 470px;
-  
+
+.Grid-devices video {
+  height: 330px;
+  width: 440px;
+  top:0;
+  right: 0;
+  padding-top:20px;
+  position: relative;
 }
 .Text {
   text-align:center;
   letter-spacing: 0.1em;
   font-size: 1.7rem;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding-top: 40px;
 
   
 }
@@ -140,8 +166,6 @@ button:hover  {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
  
 }
-
-
 
 
 .Container-down {
@@ -176,23 +200,34 @@ button:hover  {
 
 }
 .text-down {
-  text-align:left;
-  padding:20px;
+  text-align:center;
+  padding:50px;
   margin:0 auto;
   position: relative;
   font-size: 1.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing:0.2em;
+  color: white;
+  padding-top:30px;
+}
 
+
+.text-down p{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .Image-down img {
-  height:350px;
-  width: 25%;
+  height:400px;
+  width: 30%;
   margin:0;
-  padding: 20px;
+  padding:30px;
   left: 300px;
   position: relative;
+  padding-top: 50px;
+  
  
 }
 
@@ -201,7 +236,7 @@ button:hover  {
   margin:40px;
   padding:40px;
   font-size: 1.3rem;
-
+  padding-top: 0px;
 }
 
 #Download img {
@@ -216,14 +251,14 @@ button:hover  {
 }
 
 #Download p {
-  color: rgb(48, 8, 66);
+  color:rgb(62, 53, 114) ;
   text-align: center;
   padding: 110px;
-  position: absolute;
-  top:0;
-  left:220px;
+  position:absolute;
+  top: 0;
+  left: 220px;
   font-size: 1.1em;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:Cambria, Cochin, Georgia, Times, serif;
   
 }
 
@@ -238,10 +273,6 @@ button:hover  {
   font-size: 1.2rem;
 }
 
-.Footer {
-  height:10vh;
-  width:20%;
-}
 .Form {
   display:flex;
   justify-content: space-around;
@@ -260,24 +291,36 @@ button:hover  {
 }
 
 .MainMovies{
-  height:100vh; 
-  width:100vw;
+  height:90vh; 
   background:white;
   padding-top:90px;
- 
- 
+
  }
 
 .Movieslist {
   display:flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+}
+.Mainmov {
+  padding-top: 40px;
+  margin:0;
+  position: relative;
+  color: white;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: center;
+  align-items: center;
+
+
 }
 
 
 .everywhere-section {
   display:grid;
   grid-template-columns: 80% 20%;
+  position: relative;
   
 }
 .Grid{
@@ -316,7 +359,7 @@ button:hover  {
   font-size:3rem;
   padding-top: 30px;
   margin: 0 auto;
-  padding:30px;
+  padding:40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   
 }
@@ -367,10 +410,49 @@ button:hover  {
 
  .pa-every {
   text-align: left;
-  padding: 20px;
+  padding: 10px;
   margin: 20px;
-  padding-top: 10px;
+  padding-top:0;
   position: relative;
-  top:0;
+  top:-350px;
   left:0;
  }
+  
+  .Form-footer  {
+   left:560px;
+   position: relative;
+   bottom:10px;
+   align-items: center;
+   bottom: -20px;
+  
+  }
+
+  .Form-footer button {
+    height: 40px;
+    width: 110px;
+   cursor:pointer;
+   text-transform: uppercase;
+   color: black;
+   margin: 0;
+   bottom:30px;
+   position: relative;
+   background: red;
+   
+  }
+  .text p{
+    text-align:center;
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    align-items: center;
+    text-shadow: -1px 15px 3px #039cf4;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+  
+  
+  .Form-footer button:hover {
+    color: white;
+    background:darkslateblue;
+  }
+  

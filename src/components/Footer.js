@@ -3,20 +3,21 @@
 const Footer =()=>{
     return (
         <footer className="Footer">
-            <div className="Form">
+            <div className="Form-footer">
                 <form>
-                    <input type="email" 
-                    placeholder="entrer votre email" />
+                    <textarea cols={20} rows={3} type="texte" placeholder="Ici votre message">
+
+                    </textarea>
 
                     <button type="submit">
-                        Chercher
+                        Valider
                     </button>
                 </form>
 
             </div>
             <div className="text">
                 <p>
-                    Merci pour votre viste!
+                    Merci pour votre viste !
                 </p>
             </div>  
 
